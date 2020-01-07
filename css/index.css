@@ -298,3 +298,16 @@ main .how p {
   padding-top: 20px;
   text-align: center;
 }
+.bottom-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.bottom-images img {
+  width: 33.333%;
+}
