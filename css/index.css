@@ -282,3 +282,19 @@ main .how p {
   width: 50%;
   height: auto;
 }
+.middle-text {
+  background: black;
+  color: white;
+  padding: 30px 50px;
+}
+.middle-text h4 {
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+}
+.middle-text p {
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 20px;
+  text-align: center;
+}
