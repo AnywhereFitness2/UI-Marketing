@@ -244,6 +244,7 @@ main .how {
   justify-content: space-evenly;
   align-items: center;
   font-size: 16px;
+  flex-wrap: wrap;
 }
 main .how .find-class,
 main .how .offer-class,
