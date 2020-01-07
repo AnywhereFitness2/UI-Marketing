@@ -269,3 +269,14 @@ main .how p {
   text-align: center;
   line-height: 19px;
 }
+.middle-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.middle-images img {
+  width: 50%;
+  height: auto;
+}
