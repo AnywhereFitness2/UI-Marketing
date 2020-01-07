@@ -245,6 +245,7 @@ main .how {
   align-items: center;
   font-size: 16px;
   flex-wrap: wrap;
+  margin: 20px 0px;
 }
 main .how .find-class,
 main .how .offer-class,
