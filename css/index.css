@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  background: black;
+  padding: 18px 30px;
+}
+.nav-bar .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .logo img {
+  width: 20px;
+  height: 20px;
+}
+.nav-bar .logo h1 {
+  color: white;
+  padding-left: 5px;
+  margin: 0px;
+}
+.nav-bar nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px;
+  font-weight: lighter;
+}
+.nav-bar nav a:hover {
+  border-bottom: 2px solid #FB065E;
+}
+footer {
+  background-color: black;
+  padding: 20px 0px 20px 0px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  background: black;
+  padding: 0px 0px 20px 0px;
+}
+footer .footer .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .logo img {
+  width: 20px;
+  height: 20px;
+}
+footer .footer .logo h1 {
+  color: white;
+  padding-left: 5px;
+  margin: 0px;
+}
+footer .footer nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 5px 0px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+footer .footer nav a:hover {
+  border-bottom: 2px solid #FB065E;
+}
+footer .copyright,
+footer .attributions {
+  color: white;
+  text-align: center;
+}
+footer .copyright a,
+footer .attributions a {
+  color: white;
+}
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+header h2 {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  font-size: 10vw;
+  font-weight: bold;
+  color: #FB065E;
+}
+main .how {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+main .how .find-class,
+main .how .offer-class,
+main .how .go {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .how img {
+  width: 65px;
+  height: 65px;
+  margin: 10px 0px;
+  text-align: center;
+}
+main .how h3 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+main .how p {
+  font-weight: lighter;
+  padding: 10px 60px;
+  text-align: center;
+  line-height: 19px;
+}
+.middle-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.middle-images img {
+  width: 50%;
+  height: auto;
+}
+.middle-text {
+  background: black;
+  color: white;
+  padding: 30px 50px;
+}
+.middle-text h4 {
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+}
+.middle-text p {
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 20px;
+  text-align: center;
+}
+.bottom-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.bottom-images img {
+  width: 33.333%;
+}
