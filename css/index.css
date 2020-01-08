@@ -169,6 +169,57 @@ body {
 .nav-bar nav a:hover {
   border-bottom: 2px solid #FB065E;
 }
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .nav-bar .logo {
+    margin-top: 10px;
+  }
+  .nav-bar .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-bar .logo h1 {
+    font-size: 30px;
+  }
+  .nav-bar nav {
+    padding: 25px 0px 0px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .nav-bar .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-bar .logo h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 370px) {
+  .nav-bar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px 0px 0px 0px;
+  }
+  .nav-bar nav a {
+    padding-top: 15px;
+  }
+}
 footer {
   background-color: black;
   padding: 20px 0px 20px 0px;
