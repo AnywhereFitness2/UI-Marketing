@@ -28,50 +28,47 @@
         border-bottom: 2px solid @pink;
     }
 
-    @media @tablet {
-        .flex-class(column, center, center, 16px);
+    .side-nav {
+        height:200px;
+        width:0;
+        position:fixed;
+        z-index:1;
+        top:0;
+        right:0;
+        background-color:#111;
+        opacity:0.9;
+        overflow-x:hidden;
+        padding-top:60px;
+        transition:0.5s;
 
-        .logo {
-            margin-top: 10px;
-            img {
-                width: 30px;
-                height: 30px;
-            }
-
-            h1 {
-                font-size: 30px;
-            }
+        a{
+            padding:10px 10px 10px 30px;
+            text-decoration:none;
+            font-size:22px;
+            color:#ccc;
+            display:block;
+            transition:0.3s;
         }
 
-        nav {
-            padding: 25px 0px 0px 0px;
+        a:hover{
+            color:#fff;
+        }
+
+        .btn-close{
+            position:absolute;
+            top:0;
+            right:22px;
+            font-size:36px;
+            margin-left:50px;
         }
     }
 
-    @media @mobile {
-        .flex-class(column, center, center, 16px);
-
-        .logo {
-            img {
-                width: 30px;
-                height: 30px;
-            }
-
-            h1 {
-                font-size: 30px;
-            }
-        }
+    @media(max-width:768px){
+        .nav-container{display:none}
     }
 
-    @media @small {
-        nav {
-            .flex-class(column, center, center, 16px);
-            padding: 20px 0px 0px 0px;
-
-            a {
-                padding-top: 15px;
-            }
-        }
+    @media(min-width:769px){
+        .open-slide{display:none}
     }
 
     
