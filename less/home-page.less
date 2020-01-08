@@ -21,7 +21,14 @@ header {
 }
 
 
-main .how {
+.main-container { 
+    transition:margin-right 0.5s;
+    padding:0px;
+    overflow:hidden;
+    width:100%;
+    
+
+    .how {
     .flex-class(row, space-evenly, center, 16px);
     flex-wrap: wrap;
     margin: 20px 0px;
@@ -55,75 +62,77 @@ main .how {
     }
 }
 
-.middle-images {
-    .flex-class(row, center, center, 16px);
+
+    .middle-images {
+        .flex-class(row, center, center, 16px);
 
     
-    img {
-        width: 50%;
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        @media @mobile {
+            #map {
+                display: none;
+            }
+
+            #hands {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .middle-text {
+        background: @black;
+        color: @white;
+        padding: 30px 50px;
+        
+
+        h4 {
+            font-size: 45px;
+            line-height: 50px;
+            text-align: center;
+
+            @media @mobile {
+                font-size: 35px;
+            }
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: lighter;
+            padding-top: 20px;
+            text-align: center;
+
+            @media @mobile {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .bottom-images {
+        .flex-class(row, center, center, 16px);
+        flex-wrap: wrap;
+        width: 100%;
         height: auto;
-    }
 
-    @media @mobile {
-        #map {
-            display: none;
+        img {
+            width: 33.333%;
         }
-
-        #hands {
-            width: 100%;
-        }
-    }
-}
-
-
-
-.middle-text {
-    background: @black;
-    color: @white;
-    padding: 30px 50px;
-    
-
-    h4 {
-        font-size: 45px;
-        line-height: 50px;
-        text-align: center;
 
         @media @mobile {
-            font-size: 35px;
+            #fist-bump {
+                display: none;
+            }
+
+            .flex-class(column, center, center, 16px);
+            #instructor, #running {
+                width: 100%;
+            }
+        
         }
-    }
-
-    p {
-        font-size: 25px;
-        font-weight: lighter;
-        padding-top: 20px;
-        text-align: center;
-
-        @media @mobile {
-            font-size: 20px;
-        }
-    }
-}
-
-.bottom-images {
-    .flex-class(row, center, center, 16px);
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-
-    img {
-        width: 33.333%;
-    }
-
-    @media @mobile {
-        #fist-bump {
-            display: none;
-        }
-
-        .flex-class(column, center, center, 16px);
-        #instructor, #running {
-            width: 100%;
-        }
-    
     }
 }

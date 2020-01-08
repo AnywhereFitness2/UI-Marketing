@@ -169,55 +169,45 @@ body {
 .nav-bar nav a:hover {
   border-bottom: 2px solid #FB065E;
 }
+.nav-bar .side-nav {
+  height: 200px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.nav-bar .side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+.nav-bar .side-nav a:hover {
+  color: #fff;
+}
+.nav-bar .side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 @media (max-width: 768px) {
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-  }
-  .nav-bar .logo {
-    margin-top: 10px;
-  }
-  .nav-bar .logo img {
-    width: 30px;
-    height: 30px;
-  }
-  .nav-bar .logo h1 {
-    font-size: 30px;
-  }
-  .nav-bar nav {
-    padding: 25px 0px 0px 0px;
+  .nav-bar .nav-container {
+    display: none;
   }
 }
-@media (max-width: 500px) {
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-  }
-  .nav-bar .logo img {
-    width: 30px;
-    height: 30px;
-  }
-  .nav-bar .logo h1 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 370px) {
-  .nav-bar nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    padding: 20px 0px 0px 0px;
-  }
-  .nav-bar nav a {
-    padding-top: 15px;
+@media (min-width: 769px) {
+  .nav-bar .open-slide {
+    display: none;
   }
 }
 footer {
@@ -289,7 +279,13 @@ header h2 {
   font-weight: bold;
   color: #FB065E;
 }
-main .how {
+.main-container {
+  transition: margin-right 0.5s;
+  padding: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+.main-container .how {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -298,78 +294,78 @@ main .how {
   flex-wrap: wrap;
   margin: 20px 0px;
 }
-main .how .find-class,
-main .how .offer-class,
-main .how .go {
+.main-container .how .find-class,
+.main-container .how .offer-class,
+.main-container .how .go {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   margin: 0px 20px;
 }
-main .how img {
+.main-container .how img {
   width: 65px;
   height: 65px;
   margin: 10px 0px;
   text-align: center;
 }
-main .how h3 {
+.main-container .how h3 {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
 }
-main .how p {
+.main-container .how p {
   font-weight: lighter;
   padding: 10px 0px;
   text-align: center;
   line-height: 19px;
 }
-.middle-images {
+.main-container .middle-images {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 16px;
 }
-.middle-images img {
+.main-container .middle-images img {
   width: 50%;
   height: auto;
 }
 @media (max-width: 500px) {
-  .middle-images #map {
+  .main-container .middle-images #map {
     display: none;
   }
-  .middle-images #hands {
+  .main-container .middle-images #hands {
     width: 100%;
   }
 }
-.middle-text {
+.main-container .middle-text {
   background: black;
   color: white;
   padding: 30px 50px;
 }
-.middle-text h4 {
+.main-container .middle-text h4 {
   font-size: 45px;
   line-height: 50px;
   text-align: center;
 }
 @media (max-width: 500px) {
-  .middle-text h4 {
+  .main-container .middle-text h4 {
     font-size: 35px;
   }
 }
-.middle-text p {
+.main-container .middle-text p {
   font-size: 25px;
   font-weight: lighter;
   padding-top: 20px;
   text-align: center;
 }
 @media (max-width: 500px) {
-  .middle-text p {
+  .main-container .middle-text p {
     font-size: 20px;
   }
 }
-.bottom-images {
+.main-container .bottom-images {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -379,22 +375,22 @@ main .how p {
   width: 100%;
   height: auto;
 }
-.bottom-images img {
+.main-container .bottom-images img {
   width: 33.333%;
 }
 @media (max-width: 500px) {
-  .bottom-images {
+  .main-container .bottom-images {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 16px;
   }
-  .bottom-images #fist-bump {
+  .main-container .bottom-images #fist-bump {
     display: none;
   }
-  .bottom-images #instructor,
-  .bottom-images #running {
+  .main-container .bottom-images #instructor,
+  .main-container .bottom-images #running {
     width: 100%;
   }
 }

@@ -15,12 +15,45 @@
             <img src="img/pink-logo-circle.svg" alt="pink circle logo">
             <h1>AnywhereFitness</h1>
         </div>
-        <nav>
+        <nav class="nav-navbar">
+            <div class="nav-container">
+                <a href="about.html">About Us</a>
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </div>
+
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                  <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                  </svg>
+                </a>
+              </span>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
             <a href="about.html">About Us</a>
             <a href="#">Login</a>
             <a href="#">Sign Up</a>
-        </nav>
+            
+        </div>
     </div>  
+
+    <script>
+        function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginRight = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginRight = '0';
+    }
+    </script>
+    
     
     <!--HEADER-->
     
@@ -31,7 +64,7 @@
 
     <!--MAIN-->
 
-    <main>
+    <main class="main-container">
 
         <div class="how">
             <div class="find-class">
