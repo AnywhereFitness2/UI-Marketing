@@ -27,4 +27,52 @@
     nav a:hover {    
         border-bottom: 2px solid @pink;
     }
+
+    @media @tablet {
+        .flex-class(column, center, center, 16px);
+
+        .logo {
+            margin-top: 10px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        nav {
+            padding: 25px 0px 0px 0px;
+        }
+    }
+
+    @media @mobile {
+        .flex-class(column, center, center, 16px);
+
+        .logo {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    @media @small {
+        nav {
+            .flex-class(column, center, center, 16px);
+            padding: 20px 0px 0px 0px;
+
+            a {
+                padding-top: 15px;
+            }
+        }
+    }
+
+    
 }
