@@ -304,6 +304,8 @@ main .how .go {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px;
+  margin: 0px 20px;
 }
 main .how img {
   width: 65px;
@@ -318,7 +320,7 @@ main .how h3 {
 }
 main .how p {
   font-weight: lighter;
-  padding: 10px 60px;
+  padding: 10px 0px;
   text-align: center;
   line-height: 19px;
 }
@@ -333,6 +335,14 @@ main .how p {
   width: 50%;
   height: auto;
 }
+@media (max-width: 500px) {
+  .middle-images #map {
+    display: none;
+  }
+  .middle-images #hands {
+    width: 100%;
+  }
+}
 .middle-text {
   background: black;
   color: white;
@@ -343,11 +353,21 @@ main .how p {
   line-height: 50px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .middle-text h4 {
+    font-size: 35px;
+  }
+}
 .middle-text p {
   font-size: 25px;
   font-weight: lighter;
   padding-top: 20px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .middle-text p {
+    font-size: 20px;
+  }
 }
 .bottom-images {
   display: flex;
@@ -361,4 +381,20 @@ main .how p {
 }
 .bottom-images img {
   width: 33.333%;
+}
+@media (max-width: 500px) {
+  .bottom-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .bottom-images #fist-bump {
+    display: none;
+  }
+  .bottom-images #instructor,
+  .bottom-images #running {
+    width: 100%;
+  }
 }
