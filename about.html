@@ -2,112 +2,108 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
   <title>About</title>
 </head>
 
 <body>
 
   <div class="nav-bar">
-    <div class="logo">
-      <img src="img/Ellipse 1.svg" alt="pink circle">
-      <a href="#">Home</a>
-      <a href="#">Login</a>
-      <a href="#">Sign Up</a>
+      <div class="logo">
+          <img src="img/pink-logo-circle.svg" alt="pink circle logo">
+          <h1>AnywhereFitness</h1>
+      </div>
+      <nav class="nav-navbar">
+          <div class="nav-container">
+              <a href="about.html">About Us</a>
+              <a href="#">Login</a>
+              <a href="#">Sign Up</a>
+          </div>
+
+          <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+              </a>
+            </span>
       </nav>
+
+      <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <a href="about.html">About Us</a>
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
+
+      </div>
+  </div>
+
+  <script>
+      function openSlideMenu(){
+    document.getElementById('side-menu').style.width = '250px';
+    document.getElementById('main').style.marginRight = '250px';
+  }
+
+  function closeSlideMenu(){
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('main').style.marginRight = '0';
+  }
+  </script>
 
       <header class="header">
         <h1>About AnywhereFittness</h1>
       </header>
 
       <div class="aboutIntro">
-        <p>About AnywhereFitness The AnywhereFitness app makes it painless for Instructors and Clients alike to hold and attend Fitness classes wherever they might be held. Sign up as a client or an instructor. Find or offer a class. It’s that easy!
+        <p>About AnywhereFitness The AnywhereFitness app makes it painless for Instructors and Clients alike to hold and attend Fitness classes wherever they might be held.</p>
+        <p>Sign up as a client or an instructor. Find or offer a class. It’s that easy!
           We want to make it simple for people to work out on the fly, whenever, wherever. No memberships or gym commitments needed</p>
       </div>
 
       <div class="boxes">
         <div class="client">
           <h2>Client Features</h2>
-          <p>Find classes from certified fitness instructors</p>
-          <p>View information about classes such as location, class size, start time and duration</p>
-          <p>Book, Cancel, or Reschedule</p>
-          <p>Pay via app</p>
+          <p> <img src="img/Vector.png" alt=""> Find classes from certified fitness instructors</p>
+          <p> <img src="img/Vector.png" alt=""> View information about classes such as location, class size, start time and duration</p>
+          <p> <img src="img/Vector.png" alt=""> Book, Cancel, or Reschedule</p>
+          <p> <img src="img/Vector.png" alt=""> Pay via app</p>
         </div>
 
         <div class="instructor">
           <h2>Instructor Features</h2>
-          <p>Easily add classes or sessions</p>
-          <p>Keep track of clients and take attendance</p>
-          <p>Request and process payments, create virtual punch passes</p>
-          <p>Alert clients of cancellations or location changes and more!</p>
+          <p><img src="img/Vector.png" alt=""> Easily add classes or sessions</p>
+          <p><img src="img/Vector.png" alt=""> Keep track of clients and take attendance</p>
+          <p><img src="img/Vector.png" alt=""> Request and process payments, create virtual punch passes</p>
+          <p><img src="img/Vector.png" alt=""> Alert clients of cancellations or location changes and more!</p>
         </div>
       </div>
 
-      <div class="aboutTeam">
-        <h2>Meet Our Team</h2>
 
-        <div class="profiles">
 
-          <div class="profile1">
-            <img src="img\Phil Hart 1.png" alt="">
-            <h2>Phil Hart</h2>
-            <h3>Project Manager</h3>
+
+      <footer>
+          <div class="footer">
+              <div class="logo">
+                  <img src="img/pink-logo-circle.svg" alt="pink circle logo">
+                  <h1>AnywhereFitness</h1>
+              </div>
+              <nav>
+                  <a href="about.html">About Us</a>
+                  <a href="team.html">Meet Our Team</a>
+                   <a href="#">Login</a>
+                  <a href="#">Sign Up</a>
+              </nav>
           </div>
+          <div class="copyright">&copy AnywhereFitness 2019</div>
+          <div class="attributions">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
-          <div class="profile2">
-            <img src="img\Kaylen Milliner 1.png" alt="">
-            <h2>Kaylen Milliner</h2>
-            <h3>Marketing/UI</h3>
-          </div>
-
-          <div class="profile3">
-            <img src="img\Gregory Weaver 1.png" alt="">
-            <h2>Gregory Weaver</h2>
-            <h3>Marketing/UI</h3>
-          </div>
-
-          <div class="profile4">
-            <img src="img\Christopher Shockley 1.png" alt="">
-            <h2>Chris Shockley</h2>
-            <h3>Web/React</h3>
-          </div>
-
-          <div class="profile5">
-            <img src="img\Wade Coplen 1.png" alt="">
-            <h2>Wade Coplen</h2>
-            <h3>Web/React</h3>
-          </div>
-
-          <div class="profile6">
-            <img src="img\Carl Padilla 1.png" alt="">
-            <h2>Carl Padilla</h2>
-            <h3>Web/React</h3>
-          </div>
-        </div>
-
-        <div class="contact">
-          <img src="img\rima-kruciene-Tq9Ln3gpiG4-unsplash 1.png" alt="">
-          <h1>Have a question for us?</h1>
-          <form action="action_page.php">
-
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="city">City</label>
-            <select id="city" name="city">
-              <option value="Atlanta">Atlanta</option>
-              <option value="New York">New York</option>
-              <option value="Philadelphia">Philadelphia</option>
-            </select>
-            <input type="submit" value="Submit">
-
-          </form>
-        </div>
-
-      </div>
+      </footer>
 
 </body>
 

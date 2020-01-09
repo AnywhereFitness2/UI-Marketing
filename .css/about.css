@@ -169,6 +169,57 @@ body {
 .nav-bar nav a:hover {
   border-bottom: 2px solid #FB065E;
 }
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .nav-bar .logo {
+    margin-top: 10px;
+  }
+  .nav-bar .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-bar .logo h1 {
+    font-size: 30px;
+  }
+  .nav-bar nav {
+    padding: 25px 0px 0px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .nav-bar .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-bar .logo h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 370px) {
+  .nav-bar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px 0px 0px 0px;
+  }
+  .nav-bar nav a {
+    padding-top: 15px;
+  }
+}
 footer {
   background-color: black;
   padding: 20px 0px 20px 0px;
@@ -219,76 +270,4 @@ footer .attributions {
 footer .copyright a,
 footer .attributions a {
   color: white;
-}
-header {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-header h1 {
-  font-size: 3vw;
-  font-weight: bold;
-  color: black;
-  background-color: #FB065E;
-}
-.aboutIntro {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding-top: 20px;
-  font-weight: bold;
-}
-.aboutIntro p {
-  font-size: 22px;
-}
-.boxes {
-  padding-top: 33px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 25px;
-}
-.boxes .client {
-  background-color: #FB065E;
-  border: black 2px solid;
-  margin-left: 25px;
-  margin-right: 25px;
-  width: 575px;
-  height: 400px;
-}
-.boxes .client h2 {
-  background-color: black;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-.boxes .client p {
-  font-size: 34px;
-  font-weight: bold;
-  color: white;
-  text-align: justify;
-}
-.boxes .instructor {
-  background-color: #FB065E;
-  border: black 2px solid;
-  margin-left: 25px;
-  margin-right: 25px;
-  width: 575px;
-  height: 400px;
-}
-.boxes .instructor h2 {
-  background-color: black;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-.boxes .instructor p {
-  font-size: 34px;
-  font-weight: bold;
-  color: white;
-  text-align: justify;
 }
