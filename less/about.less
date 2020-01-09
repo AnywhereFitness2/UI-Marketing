@@ -1,0 +1,92 @@
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+
+body{
+
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+
+    h1 {
+        font-size: 3vw;
+        font-weight: bold;
+        color: @black;
+        background-color: @pink;
+
+
+    }
+}
+
+.aboutIntro{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+
+  p{
+    font-size: 22px;
+  }
+}
+
+.boxes{
+  padding-top: 33px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 25px;
+
+  .client{
+    border: @black 2px solid;
+    padding-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    h2{
+      background-color: @black;
+      font-size: 40px;
+      font-weight: bold;
+      color: @white;
+      text-align: center;
+
+
+    }
+    p{
+      background-color: @pink;
+      font-size: 34px;
+      font-weight: bold;
+      color: @white;
+      text-align: center;
+    }
+  }
+
+  .instructor{
+    border: @black 2px solid;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    h2{
+      background-color: @black;
+      font-size: 40px;
+      font-weight: bold;
+      color: @white;
+      text-align: center;
+    }
+    p{
+      background-color: @pink;
+      font-size: 34px;
+      font-weight: bold;
+      color: @white;
+      text-align: center;
+    }
+  }
+}
