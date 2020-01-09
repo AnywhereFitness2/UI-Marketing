@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-size: 16px;
 }
 html,
 body {
@@ -141,7 +142,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   background: black;
   padding: 18px 30px;
 }
@@ -185,7 +186,7 @@ body {
 .nav-bar .side-nav a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1.38rem;
   color: #ccc;
   display: block;
   transition: 0.3s;
@@ -197,15 +198,15 @@ body {
   position: absolute;
   top: 0;
   right: 22px;
-  font-size: 36px;
+  font-size: 2.25rem;
   margin-left: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 799px) {
   .nav-bar .nav-container {
     display: none;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 800px) {
   .nav-bar .open-slide {
     display: none;
   }
@@ -219,7 +220,7 @@ footer .footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   background: black;
   padding: 0px 0px 20px 0px;
 }
@@ -246,7 +247,7 @@ footer .footer nav a {
   color: white;
   margin: 0px;
   padding: 5px 0px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: lighter;
 }
 footer .footer nav a:hover {
@@ -290,7 +291,7 @@ header h2 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   flex-wrap: wrap;
   margin: 20px 0px;
 }
@@ -311,7 +312,7 @@ header h2 {
 }
 .main-container .how h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
 }
 .main-container .how p {
@@ -325,7 +326,7 @@ header h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .main-container .middle-images img {
   width: 50%;
@@ -345,7 +346,7 @@ header h2 {
   padding: 30px 50px;
 }
 .main-container .middle-text h4 {
-  font-size: 45px;
+  font-size: 2.81rem;
   line-height: 50px;
   text-align: center;
 }
@@ -355,14 +356,14 @@ header h2 {
   }
 }
 .main-container .middle-text p {
-  font-size: 25px;
+  font-size: 1.56rem;
   font-weight: lighter;
   padding-top: 20px;
   text-align: center;
 }
 @media (max-width: 500px) {
   .main-container .middle-text p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 .main-container .bottom-images {
@@ -370,7 +371,7 @@ header h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
@@ -384,7 +385,7 @@ header h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .main-container .bottom-images #fist-bump {
     display: none;
