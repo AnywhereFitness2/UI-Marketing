@@ -21,75 +21,115 @@ header {
 }
 
 
-main .how {
-    .flex-class(row, space-evenly, center, 16px);
-    flex-wrap: wrap;
-    margin: 20px 0px;
+.main-container {
+    transition:margin-right 0.5s;
+    padding:0px;
+    overflow:hidden;
+    width:100%;
 
-    .find-class, .offer-class, .go {
+    .how {
+        .flex-class(row, space-evenly, center, 1rem);
+        flex-wrap: wrap;
+        margin: 20px 0px;
+
+        .find-class, .offer-class, .go {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+        padding: 0px;
+        margin: 0px 20px;
+        }
 
-    img {
+        img {
         width: 65px;
         height: 65px;
         margin: 10px 0px;
         text-align: center;
-    }
+        }
 
-    h3 {
+        h3 {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.25rem;
         text-align: center;
-    }
+        }
 
-    p {
+        p {
         font-weight: lighter;
-        padding: 10px 60px;
+        padding: 10px 0px;
         text-align: center;
         line-height: 19px;
+        }
     }
-}
 
-.middle-images {
-    .flex-class(row, center, center, 16px);
+    .middle-images {
+        .flex-class(row, center, center, 1rem);
 
-    
-    img {
-        width: 50%;
+        
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        @media @mobile {
+            #map {
+                display: none;
+            }
+
+            #hands {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .middle-text {
+        background: @black;
+        color: @white;
+        padding: 30px 50px;
+        
+
+        h4 {
+            font-size: 2.81rem;
+            line-height: 50px;
+            text-align: center;
+
+            @media @mobile {
+                font-size: 35px;
+            }
+        }
+
+        p {
+            font-size: 1.56rem;
+            font-weight: lighter;
+            padding-top: 20px;
+            text-align: center;
+
+            @media @mobile {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .bottom-images {
+        .flex-class(row, center, center, 1rem);
+        flex-wrap: wrap;
+        width: 100%;
         height: auto;
-    }
-}
 
-.middle-text {
-    background: @black;
-    color: @white;
-    padding: 30px 50px;
-    
+        img {
+            width: 33.333%;
+        }
 
-    h4 {
-        font-size: 45px;
-        line-height: 50px;
-        text-align: center;
-    }
+        @media @mobile {
+            #fist-bump {
+                display: none;
+            }
 
-    p {
-        font-size: 25px;
-        font-weight: lighter;
-        padding-top: 20px;
-        text-align: center;
-    }
-}
-
-.bottom-images {
-    .flex-class(row, center, center, 16px);
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-
-    img {
-        width: 33.333%;
+            .flex-class(column, center, center, 1rem);
+            #instructor, #running {
+                width: 100%;
+            }
+        
+        }
     }
 }

@@ -1,5 +1,5 @@
 .nav-bar {
-    .flex-class(row, space-between, center, 16px);
+    .flex-class(row, space-between, center, 1rem);
     background: @black;
     padding: 18px 30px;
     .logo {
@@ -27,4 +27,49 @@
     nav a:hover {
         border-bottom: 2px solid @pink;
     }
+
+    .side-nav {
+        height:200px;
+        width:0;
+        position:fixed;
+        z-index:1;
+        top:0;
+        right:0;
+        background-color:#111;
+        opacity:0.9;
+        overflow-x:hidden;
+        padding-top:60px;
+        transition:0.5s;
+
+        a{
+            padding:10px 10px 10px 30px;
+            text-decoration:none;
+            font-size:1.38rem;
+            color:#ccc;
+            display:block;
+            transition:0.3s;
+        }
+
+        a:hover{
+            color:#fff;
+        }
+
+        .btn-close{
+            position:absolute;
+            top:0;
+            right:22px;
+            font-size:2.25rem;
+            margin-left:50px;
+        }
+    }
+
+    @media(max-width:799px){
+        .nav-container{display:none}
+    }
+
+    @media(min-width:800px){
+        .open-slide{display:none}
+    }
+
+
 }

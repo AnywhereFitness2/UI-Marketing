@@ -247,13 +247,16 @@ header h1 {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding-bottom: 25px;
 }
 .boxes .client {
+  background-color: #FB065E;
   border: black 2px solid;
-  padding-bottom: 10px;
   margin-left: 25px;
   margin-right: 25px;
+  width: 575px;
+  height: 400px;
 }
 .boxes .client h2 {
   background-color: black;
@@ -263,16 +266,18 @@ header h1 {
   text-align: center;
 }
 .boxes .client p {
-  background-color: #FB065E;
   font-size: 34px;
   font-weight: bold;
   color: white;
-  text-align: center;
+  text-align: justify;
 }
 .boxes .instructor {
+  background-color: #FB065E;
   border: black 2px solid;
   margin-left: 25px;
   margin-right: 25px;
+  width: 575px;
+  height: 400px;
 }
 .boxes .instructor h2 {
   background-color: black;
@@ -282,9 +287,8 @@ header h1 {
   text-align: center;
 }
 .boxes .instructor p {
-  background-color: #FB065E;
   font-size: 34px;
   font-weight: bold;
   color: white;
-  text-align: center;
+  text-align: justify;
 }
