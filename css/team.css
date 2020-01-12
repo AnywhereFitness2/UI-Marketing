@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-size: 16px;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  background: black;
+  padding: 18px 30px;
+}
+.nav-bar .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .logo img {
+  width: 20px;
+  height: 20px;
+}
+.nav-bar .logo h1 {
+  color: white;
+  padding-left: 5px;
+  margin: 0px;
+}
+.nav-bar nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px;
+  font-weight: lighter;
+}
+.nav-bar nav a:hover {
+  border-bottom: 2px solid #FB065E;
+}
+.nav-bar .side-nav {
+  height: 200px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.nav-bar .side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 1.38rem;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+.nav-bar .side-nav a:hover {
+  color: #fff;
+}
+.nav-bar .side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 2.25rem;
+  margin-left: 50px;
+}
+@media (max-width: 799px) {
+  .nav-bar .nav-container {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .nav-bar .open-slide {
+    display: none;
+  }
+}
+footer {
+  background-color: black;
+  padding: 20px 0px 20px 0px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+  background: black;
+  padding: 0px 0px 20px 0px;
+}
+footer .footer .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .logo img {
+  width: 20px;
+  height: 20px;
+}
+footer .footer .logo h1 {
+  color: white;
+  padding-left: 5px;
+  margin: 0px;
+}
+footer .footer nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 5px 0px;
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+footer .footer nav a:hover {
+  border-bottom: 2px solid #FB065E;
+}
+footer .copyright,
+footer .attributions {
+  color: white;
+  text-align: center;
+}
+footer .copyright a,
+footer .attributions a {
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #FB065E;
+  font-size: 45px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.githubHandle {
+  color: #FB065E;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-decoration: none;
+}
+.githubHandle a:visited {
+  color: #FB065E;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.meetOurTeam {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.meetOurTeam h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  color: black;
+  background-color: #FB065E;
+  margin-bottom: 15px;
+}

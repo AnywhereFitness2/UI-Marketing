@@ -1,23 +1,63 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link href="css/team.css" rel="stylesheet">
   <title>Anytime Fitness Team</title>
 </head>
 
 <body>
 
   <div class="nav-bar">
-    <div class="logo">
-      <img src="img/pink-logo-circle.svg" alt="pink circle logo">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Login</a>
-      <a href="#">Sign Up</a>
-    </div>
+      <div class="logo">
+          <img src="img/pink-logo-circle.svg" alt="pink circle logo">
+          <h1>AnywhereFitness</h1>
+      </div>
+      <nav class="nav-navbar">
+          <div class="nav-container">
+              <a href="about.html">About Us</a>
+              <a href="#">Login</a>
+              <a href="#">Sign Up</a>
+          </div>
+
+          <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+              </a>
+            </span>
+      </nav>
+
+      <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
+
+      </div>
+  </div>
+
+  <script>
+      function openSlideMenu(){
+    document.getElementById('side-menu').style.width = '250px';
+    document.getElementById('main').style.marginRight = '250px';
+  }
+
+  function closeSlideMenu(){
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('main').style.marginRight = '0';
+  }
+  </script>
 
 
-    <div class="aboutTeam">
+    <!-- <div class="aboutTeam">
       <h2>Meet Our Team</h2>
 
       <div class="profiles">
@@ -57,6 +97,96 @@
           <h2>Carl Padilla</h2>
           <h3>Web/React</h3>
         </div>
-      </div>
+      </div> -->
+<div class="meetOurTeam">
+  <h1>Meet our team</h1>
+</div>
+
+
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="githubHandle"><a href="https://github.com/PhilHart23">Github</a></div>
+    <img src="img\Phil Hart 1.png" style="width:100%">
+    <div class="text">Project Manager</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="githubHandle"><a href="https://github.com/kmilliner888">Github</a></div>
+    <img src="img\Kaylen Milliner 1.png" style="width:100%">
+    <div class="text">Marketing/UI</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="githubHandle"><a href="https://github.com/gweaver87">Github</a></div>
+    <img src="img\Gregory Weaver 1.png" style="width:100%">
+    <div class="text">Marketing/UI</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="githubHandle"><a href="https://github.com/cishocksr">Github</a></div>
+    <img src="img\Christopher Shockley 1.png" style="width:100%">
+    <div class="text">Web/React</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="githubHandle"><a href="https://github.com/Wade-Coplen">Github</a></div>
+    <img src="img\Wade Coplen 1.png" style="width:100%">
+    <div class="text">Web/React</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="githubHandle"><a href="https://github.com/carlpadilla">Github</a></div>
+    <img src="img\Carl Padilla 1.png" style="width:100%">
+    <div class="text">Web/React</div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3250);
+}
+</script>
+
+<div class="contactUs">
+
+</div>
+      <footer>
+          <div class="footer">
+              <div class="logo">
+                  <img src="img/pink-logo-circle.svg" alt="pink circle logo">
+                  <h1>AnywhereFitness</h1>
+              </div>
+              <nav>
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About Us</a>
+                  <a href="team.html">Meet Our Team</a>
+                   <a href="#">Login</a>
+                  <a href="#">Sign Up</a>
+              </nav>
+          </div>
+          <div class="copyright">&copy AnywhereFitness 2019</div>
+          <div class="attributions">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+      </footer>
 
 </body>
